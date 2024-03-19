@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Notes.Database\Notes.Database.csproj"/>
+        <ProjectReference Include="..\Notes.Models\Notes.Models.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Views\NoteControl.cs">
+            <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Update="Views\NoteDetails.cs">
+            <SubType>Form</SubType>
+        </Compile>
+    </ItemGroup>
+
+</Project>
